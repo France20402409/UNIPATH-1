@@ -205,8 +205,8 @@
         5️⃣ Paste hapa chini 👇
       </p>
     </div>
-    <input type="password" id="apiKeyInput" placeholder="AIzaSy..." />
-    <p class="api-error" id="apiKeyError">⚠️ Key lazima ianze na "AIza" – angalia tena</p>
+    <input type="password" id="apiKeyInput" placeholder="AQ.Ab8R... au AIzaSy..." />
+    <p class="api-error" id="apiKeyError">⚠️ Key si sahihi – angalia tena</p>
     <button class="modal-save-btn" onclick="submitApiKey()">✅ Hifadhi na Endelea</button>
     <p class="modal-note">
       🔒 Key yako inahifadhiwa kwenye simu yako tu – <strong>haipelekwi mahali pengine.</strong><br/>
@@ -359,7 +359,7 @@
 
   function submitApiKey() {
     const key = document.getElementById('apiKeyInput').value.trim();
-    if (!key.startsWith('AIza')) {
+    if (!key.startsWith('AQ.') && !key.startsWith('AIza')) {
       document.getElementById('apiKeyError').style.display = 'block';
       return;
     }
